@@ -1,9 +1,17 @@
 html {
 	background: linear-gradient(to top right, #010024 0%, #200979 50%, #7B00FF 100%);
-	background-attachment: fixed;
+	background-attachment: relative;
 	overflow-y: auto;
 }
 
+.content-introduction {
+	text-align: center;
+}
+
+.intro-image-section {
+	padding-bottom: 0rem;
+	margin-bottom: 0rem;
+}
 
 .image img {
 	width: auto;
@@ -12,26 +20,39 @@ html {
 	max-height: 100%;
 }
 
+.faded-image img {
+	width: 500px;
+	height: 500px;
+	mask-image: radial-gradient(circle, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 70%);
+}
+
+.intro-paragraph {
+	background: linear-gradient(to left, #CCCCCC 0%, #BCBFC6 50%, #abb1bf 100%);
+	background-clip: text;
+	color: transparent;
+	margin: auto;
+	width: 65%;
+}
+
 .center-content {
 	display: grid;
 	justify-content: center;
 }
 
 .intro-section {
+	margin-top: 8rem;
 	margin-bottom: 8rem;
 }
 
+.level-links {
+	padding-top: 2rem;
+}
 .projects-section {
 	margin-left: 20rem;
 	margin-right: 20rem;
 	
 }
-@media (width < 1080px) {
-	.projects-section {
-		margin-right: 0rem;
-		margin-left: 0rem;
-	}
-}
+
 .card-footer {
 	border-style: none;
 	border-inline-end-style: none;
@@ -48,10 +69,15 @@ html {
 	padding-bottom: 5rem;
 }
 
-/*
-display: grid
-grid-template-areas:
-	"header header header header header"
-	"empty empty content empty empty"
+@media (width < 1080px) {
+	.intro-paragraph {
+		width: 100%;
+	}		
+}
 
-*/
+@media (width < 1080px) {
+	.projects-section {
+		margin-right: 0rem;
+		margin-left: 0rem;
+	}
+}
