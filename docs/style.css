@@ -44,9 +44,11 @@ html {
 	margin-bottom: 8rem;
 }
 
-.level-links {
+.level-container {
 	padding-top: 2rem;
+	width: 5%;
 }
+
 .projects-section {
 	margin-left: 20rem;
 	margin-right: 20rem;
