@@ -1,6 +1,6 @@
 html {
 	background: linear-gradient(to top right, #010024 0%, #200979 50%, #7B00FF 100%);
-	background-attachment: relative;
+	background-attachment: fixed;
 	overflow-y: auto;
 }
 
@@ -27,9 +27,7 @@ html {
 }
 */
 .intro-paragraph {
-	background: linear-gradient(to left, #CCCCCC 0%, #BCBFC6 50%, #abb1bf 100%);
-	background-clip: text;
-	color: transparent;
+	color: #E0E0E0;
 	margin: auto;
 	width: 65%;
 }
@@ -39,20 +37,50 @@ html {
 	justify-content: center;
 }
 
-.intro-section {
-	margin-top: 8rem;
-	margin-bottom: 8rem;
+.intro-name {
+	color: #FFFFFF;
+	font-size: 3.5rem;
+	letter-spacing: 0.05em;
+	margin-bottom: 0.25rem !important;
 }
 
-.level-container {
+.intro-role {
+	color: #B0B0CC;
+	font-size: 1.25rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.section-heading {
+	color: #FFFFFF;
+	letter-spacing: 0.05em;
+}
+
+.intro-section {
+	margin-top: 5rem;
+	margin-bottom: 3rem;
+}
+
+.intro-section .content-introduction {
+	margin-top: 1.5rem;
+}
+
+.link-container {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
 	padding-top: 2rem;
-	width: 5%;
+}
+
+.work-section {
+	padding-bottom: 1rem;
 }
 
 .projects-section {
-	margin-left: 20rem;
-	margin-right: 20rem;
-	
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 0;
 }
 
 .card-footer {
@@ -65,21 +93,72 @@ html {
   border-inline-end-style: none;
 }
 
+.contact-form-box {
+	background-color: #1a1a2e;
+	color: #E0E0E0;
+}
+
+.contact-form-box .title,
+.contact-form-box .subtitle {
+	color: #FFFFFF;
+}
+
+.contact-form-box span {
+	display: block;
+	margin-bottom: 0.25rem;
+	margin-top: 0.75rem;
+}
+
+.contact-form-box .button {
+	margin-top: 1rem;
+}
+
+.icon-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	color: #CCC;
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 1rem;
+	text-decoration: none;
+}
+
+.icon-link:hover {
+	color: #FFF;
+}
+
+.icon-label {
+	color: inherit;
+}
+
 .footer {
+	background: transparent;
+	color: #AAA;
 	position: relative;
 	z-index: 1;
-	padding-bottom: 5rem;
+	padding-bottom: 3rem;
+}
+
+.footer p {
+	color: #AAA;
+}
+
+.footer-github-link {
+	color: #AAA;
+}
+
+.footer-github-link:hover {
+	color: #FFF;
 }
 
 @media (width < 1080px) {
 	.intro-paragraph {
 		width: 100%;
-	}		
-}
+	}
 
-@media (width < 1080px) {
-	.projects-section {
-		margin-right: 0rem;
-		margin-left: 0rem;
+	.intro-role {
+		text-align: center;
 	}
 }
